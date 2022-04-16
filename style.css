@@ -1,0 +1,148 @@
+
+
+article{
+    background-image: url('bianco.jpg');
+}
+  #test-title{
+    font-family: 'WaltographRegular';
+    display: flex;
+    align-items: center;
+
+
+  }
+  #test-title img{
+      height: 45px;
+   
+  }
+    #princess {
+        background-image: url("principesse.jpg");
+        background-size: cover;
+        position: relative;
+        
+    }
+    #cattivi{
+        background-image: url("cattivi.jpg");
+        background-size: cover;
+        position: relative;
+        
+    }
+    #disney h1, #princess h1, #cattivi h1{
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        z-index: 2;
+    }
+    #disney{background-image: url("disney.png");
+        background-size: cover;
+        position: relative;
+        
+    }
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0;
+        right:0;
+        left:0;
+        bottom: 0;
+        z-index: 1;
+     }
+    
+
+     .result{
+         display: flex;
+         flex-direction: column;
+         margin-top: 30px;
+         padding: 20px;
+         margin-bottom: 20px;
+     }
+
+     #result-title{
+       
+        margin-bottom:9px;
+         font-size: 45px;
+         line-height: 45px;
+        
+     }
+
+     #refresh{
+         margin-top: 9px;
+     }
+    #result-contents{
+        margin-top:9px;
+        margin-bottom:9px;
+        font-size: 20px;
+    }
+    .background-result{
+        background-image: url('back3.jpeg');
+    }
+    
+
+
+/* ------------------- */
+
+     .choice-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-bottom: 10px;
+    }
+
+
+.choice-grid div{
+    border: 1px solid  #dcdcdc;
+    width: calc(32.5% - 22px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:10px;
+
+} 
+
+.no_scelta{
+    background-color: #f4f4f4;
+}
+.scartata{
+    opacity: 0.6;
+
+}
+.scelta{
+    background-color:#cfe3ff ;
+}
+
+.choice-grid img{
+    width: 100%;
+    
+}
+.no-selected{
+    opacity: 0.4;    
+}
+
+.hidden{
+    display: none;
+}
+
+ #refresh{
+     background-color: #cecece; 
+     height: 50px;
+        width: 100%;
+ }
+
+ #refresh:hover{
+     background-color: #e0e0e0;
+ }
+
+
+ @media (max-width: 700px){
+     article{
+         width: 95%;
+     }
+     header div{
+        display: none;
+     }
+ }
+
+ @media (max-width: 500px){
+     .choice-grid div{
+         width: calc(49% - 22px);
+     }
+
+ }
